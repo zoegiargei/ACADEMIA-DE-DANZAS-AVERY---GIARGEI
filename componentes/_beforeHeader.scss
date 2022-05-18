@@ -1,0 +1,20 @@
+
+
+.carr{
+    opacity: 85%;
+}
+
+
+.title{
+
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    display: flex;
+    @include dFlex(column, start, none, center);
+
+    font-size: $fontSizeXL;
+    font-weight: $fontWeightL;
+    color: $colorDark;
+    z-index: 10000;
+}

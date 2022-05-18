@@ -1,0 +1,52 @@
+/*estilo*/
+body{
+    font-family: 'BIZ UDPGothic', sans-serif;
+    background-image: linear-gradient($bgColor, hsl(249, 70%, 22%), hsl(267, 38%, 28%), hsl(274, 53%, 37%), hsl(300, 24%, 80%));
+}
+
+
+/*Mixins*/
+@mixin circle($width) {
+
+    width: $width;
+    height: $width;
+    border-radius: 100%;
+}
+
+
+@mixin dFlex($fd, $jc, $ai, $ac){
+
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    align-content: $ac;
+}
+
+
+/*EACHS*/
+@each $items in (li, a) {
+
+    #{$items} {
+        list-style-type: none;
+        text-decoration: none;
+        color: $fontColor;
+    }
+}
+
+
+@each $titles in (h1,h2,h3,h4,h5,h6) {
+
+    #{$titles}{
+        color: $fontColor;
+        font-weight: $fontWeightXL;
+    }
+}
+
+
+/*map-get*/
+$estilos:(
+    color: $bgColor,
+    border: 1px dashed $bgColorLight
+);
+
+

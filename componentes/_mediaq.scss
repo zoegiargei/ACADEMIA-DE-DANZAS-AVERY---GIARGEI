@@ -1,0 +1,160 @@
+
+
+@media only screen and (min-width: 768px){
+
+    /*footer*/
+    .footer{
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "footer-1 footer-2 footer-4"
+        "footer-1 footer-3 footer-4"
+        ;
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+
+    .titleMain{
+
+        transition: 1s;
+        &:hover{
+            background-color: $bgColorLight;
+            transform: scale(1.13, 1.13);
+        }
+    }
+
+    /**/
+    .titleProf{
+
+        @extend .titleMain;
+
+        h5{
+            margin-left: 10rem;
+        }
+    }
+
+    /**/
+    .profes{
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    
+        grid-template-areas: 
+        "prof1 prof2 prof3"
+        "prof4 prof5 prof6"
+        ;
+    
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        gap: 1rem;
+    
+    
+        &__1{
+
+            grid-area: prof1;
+            width: 18rem;
+
+            div{
+                img{
+                    width: 100%;
+                    height: 14rem;
+                    object-fit: cover;
+                }
+            }
+
+            transition: 0.5s;
+            &:hover{
+                transform: translate(0, -10%);
+            }
+        }
+        &__2{grid-area: prof2;
+            @extend .profes__1;
+        }
+        &__3{grid-area: prof3;
+            @extend .profes__1;
+        }
+        &__4{grid-area: prof4;
+            @extend .profes__1;
+        }
+        &__5{grid-area: prof5;
+            @extend .profes__1;
+        }
+        &__6{grid-area: prof6;
+            @extend .profes__1;
+        }
+    }
+
+
+    /*Pagina n2 LA ESCUELA*/
+    .txt{
+        
+        img{
+            @include circle(400px);
+        }
+    }
+
+
+    /*pagina n3 CLASES*/
+    .cuadro{
+
+        background-color: hsl(240, 67%, 94%);
+        border: 2px solid $bgColorLight;
+        box-shadow: 1px 1px 5px 5px $bgColorLight;
+
+        @include dFlex(row, center, stretch, center);
+
+        &__div{
+            width: 20rem;
+        }
+    }
+
+
+    /*pagina n4 GALERIA*/
+    .galeria{
+
+        @include dFlex(row, space-between, baseline, center);
+
+        &__img{
+
+            margin: 1rem;
+    
+            img{
+    
+                width: 20rem;
+                height: 25rem;
+                border: 1px solid $bgColorLight;
+    
+                object-fit: cover;
+            }
+
+            transition: 0.5s;
+
+            &:hover{
+
+                transform: translate(0, -20%);
+            }
+        }
+    }
+
+
+    /*footer*/
+    .footer{
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    
+        grid-template-areas: 
+        "footer-1 footer-2 footer-3 footer-4"
+        ;
+        gap: 4rem;
+
+        .redes{
+            margin-left: 200px;
+        }
+    }
+
+}

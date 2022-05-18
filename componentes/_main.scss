@@ -1,0 +1,455 @@
+
+
+/*MAIN INDEX*/
+.titleMain{
+
+    position: relative;
+
+    margin-top: 3rem;
+    background-color: $bgColor;
+
+    display: flex;
+    @include dFlex(column, center, center, center);
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px $bgColorLight;
+
+    z-index: 100000;
+
+    &__h2{
+
+        font-size: $fontSizeL;
+        font-weight: $fontWeightL;
+
+        display: flex;
+        @include dFlex(column, center, center, center);
+    }
+
+    &__h3{
+
+        @extend .titleMain__h2;
+    }
+}
+
+.title{
+    &__post{
+        &::after{
+            content: '🩰';
+        }
+    }
+}
+
+
+/*carousel*/
+.owlCarr{
+
+    &__item{
+
+        width: 18rem;
+
+        display: flex;
+        @include dFlex(column, start, flex-start, none);
+
+        div{
+            img{
+                width: 18rem;
+                height: 14rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+.infoCarr{
+
+    color: $bgColor;
+    &:hover{
+        color: $bgColorLight;
+    }
+}
+
+
+.titleProf{
+    
+    @extend .titleMain;
+
+    font-size: $fontSizeL;
+    font-weight: $fontWeightL;
+}
+
+
+.profes{
+
+    display: flex;
+    @include dFlex(column, center, center, center);
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    h5{
+        color: $colorDark;
+    }
+
+    div{
+        margin: 1rem;
+        width: 15rem;
+        div{
+            img{
+                width: 100%;
+                height: 11rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+.whatsappFixed{
+
+    z-index: 100000;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+
+    color: $fontColor;
+    font-weight: $fontWeightXL;
+    padding: 5px;
+
+    width: 100px;
+    height: 45px;
+    border-radius: 10px 0 0 10px;
+    background-color: hsl(156, 100%, 31%);
+
+    opacity: 90%;
+
+    display: flex;
+    @include dFlex(column, center, center, none);
+}
+
+
+/*Pagina n2 La Escuela*/
+.txt{
+
+    font-size: $fontSize;
+    color: $colorDark;
+    background-color: $bgColorLight;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px $bgColorLight;
+    padding: 3rem;
+    opacity: 90%;
+
+    img{
+        @include circle(150px);
+    }
+}
+
+
+.infoTarjetas{
+
+    display: flex;
+    @include dFlex(row, center, center, center);
+}
+
+
+.infoAcademia{
+
+    position: relative;
+
+    width: 15rem;
+    height: 28rem;
+    padding: 1rem;
+    color: $bgColor;
+    font-size: $fontSize;
+    font-weight: $fontWeightL;
+
+    background-image: url(../imagenes/profeIsmael.jpg);
+    border: 2px solid $bgColor;
+    box-shadow: 2px 5px 5px 3px $colorDark;
+
+    display: flex;
+    @include dFlex(column, flex-start, center, center);
+    overflow: hidden;
+
+    &__item{
+
+        display: flex;
+        @include dFlex(row, center, none, none);
+
+        font-weight: $fontWeightXL;
+
+        position: absolute;
+        top: 50%;
+    }
+
+    &__txt{
+
+        padding: 10px;
+
+        color: $fontColor;
+        font-size: ($fontSize - 5px);
+        border: 1px solid $bgColor;
+        background-color: $bgColor;
+        box-shadow: 1px 1px 2px 2px $bgColor;
+        opacity: 80%;
+
+        transform: translate(0, 350px);
+        transition: 1.2s;
+    }
+
+
+    &:hover{
+
+        .infoAcademia__item{
+            display: none;
+        }
+        .infoAcademia__txt{
+            transform: translate(0, -0px);
+        }
+    }
+}
+
+
+/*Pagina n3 Clases*/
+.titleC{
+    @extend .titleProf;
+}
+
+
+.cuadro{
+    
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    @include dFlex(column, center, stretch, center);
+
+    color: $colorDark;
+    font-weight: $fontWeightXL;
+
+    h1{
+        color: $colorDark;
+    }
+
+    &__div{
+
+        width: 100%;
+        height: max-content;
+
+        font-size: 13px;
+        background-color: hsl(240, 67%, 94%);
+    }
+
+    .lunes{
+        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+        div{
+            padding: 1rem;
+
+            &:hover{
+                transform: scale(1.3, 1.3);
+            }
+        }
+        &__1{
+            /*Danza jazz*/
+            background-color: hsl(274, 53%, 37%);
+        }
+
+        &__2{
+            /*Hip hop*/
+            background-color: hsl(300, 100%, 25%);
+        }
+        &__3{
+            /*MAMBO*/
+            background-color: hsl(300, 24%, 80%);
+        }
+        &__4{
+            /*Salsa*/
+            background-color: hsl(300, 76%, 72%);
+        }
+
+    }
+
+    .martes{
+        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+        div{
+            padding: 1rem;
+            
+            &:hover{
+                transform: scale(1.3, 1.3);
+            }
+        }
+        &__1{
+            /*STRECHING*/
+            background-color: hsl(300, 100%, 50%);
+        }
+        &__2{
+            /*ZUMBA*/
+            background-color: hsl(330, 100%, 71%);
+        }
+        &__3{
+            /*DANZA CLASICA*/
+            background-color: hsl(336, 93%, 68%);
+        }
+        &__4{
+            /*FREE DANCE*/
+            background-color: hsl(350, 58%, 84%);
+        }
+        &__5{
+            /*INSTRUCTORADO*/
+            background-color: hsl(336, 93%, 68%);
+        }
+    }
+
+    .miercoles{
+        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+        div{
+            padding: 1rem;
+
+            &:hover{
+                transform: scale(1.3, 1.3);
+            }
+        }
+        &__1{
+            /*BACHATA*/
+            background-color: hsl(350, 100%, 88%);
+        }
+        &__2{
+            @extend .lunes__1;
+        }
+        &__3{
+            @extend .lunes__2;
+        }
+        &__4{
+            @extend .lunes__4;
+        }
+    }
+
+    .jueves{
+        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+        div{
+            padding: 1rem;
+
+            &:hover{
+                transform: scale(1.3, 1.3);
+            }
+        }
+        &__1{
+            @extend .martes__1;
+        }
+        &__2{
+            @extend .martes__2;
+        }
+        &__3{
+            @extend .martes__3;
+        }
+        &__4{
+            @extend .martes__4;
+        }
+    }
+
+    .viernes{
+        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+        div{
+            padding: 1rem;
+
+            &:hover{
+                transform: scale(1.3, 1.3);
+            }
+        }
+        &__1{
+            @extend .martes__5;
+        }
+        &__2{
+            @extend .lunes__1;
+        }
+        &__3{
+            /*clases indiv*/
+            background-color: hsl(300, 24%, 80%)
+        }
+        &__4{
+            @extend .viernes__3;
+        }
+    }
+}
+
+
+/*pagina n4 Galeria*/
+.galeria{
+
+    display: flex;
+    @include dFlex(column, space-between, baseline, center);
+    flex-wrap: wrap;
+
+    &__img{
+
+        img{
+
+            width: 15rem;
+            height: 19rem;
+            border: 1px solid $bgColorLight;
+
+            object-fit: cover;
+        }
+    }
+}
+
+
+/*pagina n5 Contactanos*/
+.comunicate{
+
+    background-color: $bgColorLight;
+    height: min-content;
+    padding: 1rem;
+    font-size: $fontSize;
+
+    border: 3px dashed $colorDark;
+
+    display: flex;
+    @include dFlex(column, flex-start, flex-start, none);
+    flex-wrap: wrap;
+
+    &__title{
+        color: $colorDark;
+    }
+
+    &__telefono{
+
+        display: flex;
+        @include dFlex(row, space-evenly, baseline, center);
+        flex-wrap: wrap;
+    }
+
+    &__email{
+        @extend .comunicate__telefono;
+    }
+
+    &__ubicacion{
+        @extend .comunicate__telefono;
+    }
+
+    &__social{
+        
+        display: flex;
+        @include dFlex(row, flex-start, center, center);
+        flex-wrap: wrap;
+    }
+}
+
+
+.escribinos{
+
+    @extend .comunicate;
+
+    form{
+        div{
+            div{
+                color: $fontColor;
+            }
+        }
+    }
+
+    .btn{
+        background-color: $bgColor;
+    }
+}

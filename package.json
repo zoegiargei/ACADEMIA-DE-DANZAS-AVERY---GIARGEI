@@ -1,0 +1,15 @@
+{
+  "name": "test-sites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "sass estilos.scss ./css/estilos.css -w --no-source-map -s compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^8.1.4"
+  }
+}

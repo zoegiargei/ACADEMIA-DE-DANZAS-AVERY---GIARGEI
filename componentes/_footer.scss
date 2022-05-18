@@ -1,0 +1,100 @@
+.footer{
+
+    position: relative;
+
+    padding: 1rem;
+
+    background-color: map-get($estilos, color);
+
+    z-index: 100000;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "footer-1"
+    "footer-2"
+    "footer-3"
+    "footer-4"
+    ;
+    gap: 1rem;
+
+    &__1{
+
+        grid-area: footer-1;
+        
+        display: flex;
+        @include dFlex(column, start, none, none);
+
+        color: $fontColor;
+
+        img{
+            @include circle(80px);
+        }
+    }
+    &__2{
+
+        @extend .footer__1;
+        grid-area: footer-2;
+
+        ul{
+            li{
+                border-bottom: map-get($estilos, border);
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    &__3{
+
+        @extend .footer__2;
+        grid-area: footer-3;
+
+        margin-top: 1.5rem
+    }
+    &__4{
+
+        @extend .footer__1;
+        grid-area: footer-4;
+
+        &__redes{
+
+            .redes{
+                &:hover{
+                    color: $colorDark;
+                }
+            }
+        }
+    }
+}
+
+
+/*MAP*/
+$redessoc: (
+
+    instagram: hsl(315, 60%, 47%),
+    facebook: hsl(207, 90%, 49%),
+    whatsapp: hsl(120, 98%, 32%)
+);
+
+
+@each $name, $color in ($redessoc){
+
+    .#{$name} {
+
+        color: $color;
+    }
+}
+
+
+.derReservados{
+
+    position: absolute;
+    z-index: 1000000;
+
+    width: 100%;
+    color: $bgColorLight;
+    background-color: $colorDark;
+}
