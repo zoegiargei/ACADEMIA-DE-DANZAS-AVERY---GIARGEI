@@ -161,7 +161,7 @@
     padding: 1rem;
     color: $bgColor;
     font-size: $fontSize;
-    font-weight: $fontWeightL;
+    font-weight: $fontWeight;
 
     background-image: url(../imagenes/profeIsmael.jpg);
     border: 2px solid $bgColor;
@@ -170,6 +170,11 @@
     display: flex;
     @include dFlex(column, flex-start, center, center);
     overflow: hidden;
+
+    h6{
+        font-size: $fontSize;
+        color: $bgColor;
+    }
 
     &__item{
 
@@ -418,6 +423,8 @@
         display: flex;
         @include dFlex(row, space-evenly, baseline, center);
         flex-wrap: wrap;
+
+        font-size: small;
     }
 
     &__email{
