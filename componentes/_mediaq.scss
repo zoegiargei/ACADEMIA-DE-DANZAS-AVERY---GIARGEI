@@ -91,6 +91,8 @@
     /*PAGINA N°2 - LA ESCUELA*/
     .txt{
         
+        background-image: url(../imagenes/bailarina.jpg);
+        
         img{
             @include circle(400px);
         }

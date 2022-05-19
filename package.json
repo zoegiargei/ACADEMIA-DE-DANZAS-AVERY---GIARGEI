@@ -1,13 +1,13 @@
 {
   "name": "avery-academia-de-danzas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Avery Academia de Danzas comparte informacion sobre su modalidad académica, sus clases de danzas de diferentes ritmos afro latinos y modernos, nos muestra sus horarios disponibles, nos brinda informacion sobre sus profecionales y nos muestra recuerdos inolvidables sobre presentaciones de coreografías de los diferentes grupos de baile. En la pagina de contacto podemos encontrar los datos necesarios para comunicarnos con Avery Academia de Danzas, ver sus redes sociales y para enviarles consultas de nuestras inquietudes.",
   "main": "index.js",
   "scripts": {
     
     "start": "sass estilos.scss ./css/estilos.css -w --no-source-map -s compressed"
   },
-  "author": "",
+  "author": "zoe-giargei",
   "license": "ISC",
   "dependencies": {
     "swiper": "^8.1.4"

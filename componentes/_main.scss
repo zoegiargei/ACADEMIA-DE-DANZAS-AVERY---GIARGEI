@@ -155,8 +155,7 @@
 
     font-size: $fontSize;
     color: $colorDark;
-    background-color: $bgColorLight;
-    background-image: url(../imagenes/bailarina.jpg);
+    background-color: $bgColorSec;
     background-position: bottom;
     border-radius: 5px;
     box-shadow: 1px 1px 15px 3px $bgColorLight;
@@ -194,7 +193,7 @@
     color: $bgColor;
     font-size: $fontSize;
     font-weight: $fontWeight;
-    background-color: $bgColorLight;
+    background-color: $bgColorSec;
     background-position: bottom;
     border: 2px solid $bgColor;
     box-shadow: 2px 5px 15px 3px $colorDark;
