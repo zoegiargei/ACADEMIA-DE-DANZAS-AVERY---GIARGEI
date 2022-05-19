@@ -1,5 +1,5 @@
 # ACADEMIA-DE-DANZAS-AVERY---GIARGEI
-Inicie un nuevo proyecto mas completo que el anterior para poder aplicar lo visto en clasep
+Inicié un nuevo proyecto más completo que el anterior para poder aplicar lo visto en clase.
 ***
 
 # AVERY ACADEMIA DE DANZAS 
@@ -10,12 +10,12 @@ Inicie un nuevo proyecto mas completo que el anterior para poder aplicar lo vist
 ***
 ### ÍNDICE
 
-1. Descripcion general
+1. Descripción general
 2. Tecnologias usadas
-3. Instalacion
-4. Colaboracion 
+3. Instalación
+4. Colaboración 
 5. Vista previa del proyecto
-6. Informacion sobre el autor
+6. Información sobre el autor
 
 ***
 
@@ -23,7 +23,7 @@ Inicie un nuevo proyecto mas completo que el anterior para poder aplicar lo vist
 
 ***
 
-Proyecto orientado a ser un sitio web para una academia de danzas , en el cual se presenta informacion para el usuario sobre las clases, modalidades, informacion sobre los profecionales a cargo, las diferentes actividades e instructorado que ofrece la Academia Avery. En este repositorio encontramos la estructura y los estilos del sitio web con 5 paginas: Inicio / La Escuela / Clases / Galeria de Recuerdos / Contacto.
+**Proyecto orientado a ser un sitio web para una academia de danzas , en el cual se presenta información para el usuario sobre las clases, modalidades, información sobre los profesionales a cargo de las clases, las diferentes actividades e instructorado que ofrece la Academia Avery. En este repositorio encontramos la estructura y los estilos del sitio web con 5 páginas incluidas: Inicio / La Escuela / Clases / Galería de Recuerdos / Contacto.**
 
 ***
 
@@ -57,9 +57,9 @@ Una lista de las tecnologías utilizadas en el proyecto:
 
 ***
 
-> * Me gustaria saber si la presentacion del html e incluso el scss estan relativamente bien para la comunidad de programadores
-> * Defectos que si o si deba evitar en proximos proyectos
-> * Recomendaciones sobre cualquier aspecto, ya sea: ubicacion y nombres de los directorios, indentaciones, espacios blancos, comentarios, de SCSS: variables ,etc... Quiero aprender!!
+> * Me gustaria saber si la presentación del html e incluso el scss están relativamente bien para la comunidad de programadores
+> * Defectos que si o si deba evitar en próximos proyectos
+> * Recomendaciones sobre cualquier aspecto, ya sea: ubicación y nombres de los directorios, indentaciones, espacios blancos, comentarios, de SASS: variables ,etc... Quiero aprender!!
 
 ***
 
@@ -73,4 +73,4 @@ Una lista de las tecnologías utilizadas en el proyecto:
 
 ### Sobre el Autor
 
-**Mi nombre es ZOE GIARGEI, tengo 21 años, estoy estudiando una carrera intensiva de Desarrollo Web Full Stack, ya finalizando el curso de Desarrollo Web. Tengo conocimiento en Python y Java, estudie algunos años la carrera  de Ingenieria en Sistemas en la UTN, por lo tanto por lo visto en esos años tengo cierta facilidad para aprender logica de programacion . Mi objetivo es dedicarme a la programacion,  y  a la bioquimica como quien dice por amor al arte... Espero mi proyecto generado demuestre mi dedicacion y ganas de aprender en este rubro!**
+**Mi nombre es Zoe Giargei, tengo 21 años, estoy estudiando una carrera de Desarrollo Web Full Stack, ya finalizando el 1er curso de Desarrollo Web. Tengo conocimiento en Python y Java, estudié 2 años la carrera de Ingeniería en Sistemas en la UTN, por lo tanto, por lo visto en esos años tengo facilidad para aprender lógica de programación . Mi objetivo es dedicarme a la programación, y a la bioquímica como quien dice por amor al arte... ¡Espero que mi proyecto demuestre mi dedicación y ganas de aprender en este rubro!**
