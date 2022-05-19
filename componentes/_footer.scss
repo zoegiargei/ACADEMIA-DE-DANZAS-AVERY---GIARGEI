@@ -67,6 +67,14 @@
             }
         }
     }
+
+    @for $i from 1 to 5 {
+
+        li:nth-child(2n+1) {
+            background-color: lighten($bgColorLight, $i * 1%);
+            color: $colorDark;
+        }
+    } 
 }
 
 

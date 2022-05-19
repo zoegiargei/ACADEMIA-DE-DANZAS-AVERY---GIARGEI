@@ -55,6 +55,9 @@ body::after {
         list-style-type: none;
         text-decoration: none;
         color: $fontColor;
+        &:hover{
+            color: $colorDark;
+        }
     }
 }
 

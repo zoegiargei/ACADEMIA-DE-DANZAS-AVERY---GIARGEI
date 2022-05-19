@@ -10,18 +10,6 @@
         "footer-1 footer-2 footer-4"
         "footer-1 footer-3 footer-4"
         ;
-
-        $bgColorFooter: hsl(0, 0%, 0%);
-
-
-        @for $i from 1 to 5 {
-
-            li:nth-child(2n+1) {
-                background-color: lighten($bgColorLight, $i * 1%);
-                color: $colorDark;
-            }
-        }
-          
     }
 }
 
