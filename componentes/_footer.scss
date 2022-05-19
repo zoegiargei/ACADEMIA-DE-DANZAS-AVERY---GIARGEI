@@ -2,21 +2,22 @@
 .footer{
 
     position: relative;
-
-    padding: 1rem;
+    
+    padding: 10px;
     background-color: map-get($estilos, color);
 
     z-index: 100000;
     
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, min-content);
     grid-template-areas: 
     "footer-1"
     "footer-2"
     "footer-3"
     "footer-4"
     ;
+
     gap: 1rem;
 
     &__1{
@@ -24,7 +25,7 @@
         grid-area: footer-1;
         
         display: flex;
-        @include dFlex(column, start, none, none);
+        @include dFlex(column, start, flex-start, center);
 
         color: $fontColor;
 
@@ -34,9 +35,10 @@
     }
 
     &__2{
+    
+        grid-area: footer-2;
 
         @extend .footer__1;
-        grid-area: footer-2;
 
         ul{
             li{
@@ -48,16 +50,18 @@
 
     &__3{
 
-        @extend .footer__2;
         grid-area: footer-3;
+        
+        @extend .footer__2;
 
         margin-top: 1.5rem
     }
 
     &__4{
 
-        @extend .footer__1;
         grid-area: footer-4;
+
+        @extend .footer__1;
 
         &__redes{
             .redes{
@@ -74,9 +78,19 @@
             background-color: lighten($bgColorLight, $i * 1%);
             color: $colorDark;
         }
-    } 
+    }
 }
 
+.derReservados{
+
+    position:absolute;
+    z-index: 10000000;
+
+    width: 100%;
+    height: min-content;
+    color: $bgColorLight;
+    background-color: $colorDark;
+}
 
 /*MAP*/
 $redessoc: (
@@ -93,15 +107,4 @@ $redessoc: (
 
         color: $color;
     }
-}
-
-
-.derReservados{
-
-    position: absolute;
-    z-index: 1000000;
-
-    width: 100%;
-    color: $bgColorLight;
-    background-color: $colorDark;
 }

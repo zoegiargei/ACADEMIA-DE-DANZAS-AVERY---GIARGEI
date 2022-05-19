@@ -8,4 +8,4 @@ node_modules
 .sass-cache
 
 # Ignora archivos packages
-packages
+package.json

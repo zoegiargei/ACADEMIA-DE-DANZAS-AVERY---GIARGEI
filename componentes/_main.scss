@@ -45,6 +45,9 @@
 
     &__item{
 
+        h5{
+            color: $colorDark;
+        }
         width: 18rem;
 
         display: flex;
@@ -188,7 +191,7 @@
     position: relative;
 
     width: 15rem;
-    height: 28rem;
+    height: 20rem;
     padding: 1rem;
     color: $bgColor;
     font-size: $fontSize;
@@ -241,7 +244,7 @@
             display: none;
         }
         .infoAcademia__txt{
-            transform: translate(0, -0px);
+            transform: translate(0, 15px);
         }
     }
 }
