@@ -164,11 +164,18 @@
     margin-bottom: 2rem;
     opacity: 90%;
 
+    position: relative;
+
     img{
         @include circle(150px);
     }
 }
 
+.txtImg{
+
+    display: flex;
+    @include dFlex(column, center, center, center);
+}
 
 .infoTarjetas{
 
@@ -240,28 +247,6 @@
     }
 }
 
-.tooltip{
-
-    position: relative;
-    display: inline-block;
-    padding: 1em 3em;
-    color: $colorDark;
-    font-size: $fontSizeL;
-
-    &::after{
-
-        border-bottom: 26px solid $bgColor;
-        border-left: 26px solid transparent;
-        border-right: 26px solid transparent;
-        width: 0;
-        height: 0;
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 100%;
-        left: 4rem;
-    }
-}
 
 .txt__info{
 

@@ -7,6 +7,7 @@ $colorDark: hsl(210, 11%, 15%);
 
 $colorWtp: hsl(156, 100%, 31%);
 
+
 $fontSize: 20px;
 $fontSizeL: ($fontSize*2);
 $fontSizeXL: ($fontSize*3);
@@ -19,6 +20,6 @@ $fontWeightXL: ($fontWeight*3);
 $estilos:(
     
     color: $bgColor,
-    border: 3px dashed $bgColor
+    border: 3px dashed $bgColorLight
 );
 

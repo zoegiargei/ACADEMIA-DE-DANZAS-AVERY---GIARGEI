@@ -1,5 +1,7 @@
 
 body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: $fontWeight;
     background-image: linear-gradient($bgColor, hsl(249, 70%, 22%), hsl(267, 38%, 28%), hsl(274, 53%, 37%), hsl(300, 24%, 80%));
 }
 
@@ -60,6 +62,8 @@ body::after {
 @each $titles in (h1,h2,h3,h4,h5,h6) {
 
     #{$titles}{
+
+        font-family: 'Raleway', sans-serif;
         color: $fontColor;
         font-weight: $fontWeightXL;
     }
