@@ -33,14 +33,16 @@ Inicié un nuevo proyecto más completo que el anterior para poder aplicar lo vi
 
 Una lista de las tecnologías utilizadas en el proyecto:
 
-* [HTML](https://g.co/kgs/NWRvhW):HyperText Markup Language, versión 5
-* [CSS](https://es.wikipedia.org/wiki/CSS): Cascading Style Sheets, version 3
-* [VISUAL STUDIO CODE](https://code.visualstudio.com/): Visual studio code version  1.67
-* [GIT](https://g.co/kgs/8YViuA):  software de control de versionS GIT
-* [BOOSTRAP](https://getbootstrap.com/): Boostrap, version 5.2
+* [HTML](https://g.co/kgs/NWRvhW): HyperText Markup Language, versión 5
+* [CSS](https://es.wikipedia.org/wiki/CSS): Cascading Style Sheets, versión 3
+* [JAVASCRIPT](https://g.co/kgs/6P9Pte): JavaScript
+* [VISUAL STUDIO CODE](https://code.visualstudio.com/): Visual studio code versión  1.67
+* [GIT](https://g.co/kgs/8YViuA): Software de control de versiones GIT
+* [BOOSTRAP](https://getbootstrap.com/): Boostrap, versión 5.2
+* [OWLCAROUSEL2](https://owlcarousel2.github.io/OwlCarousel2/): Owl Carousel 2, versión 2.3.4 
 * [SASS](https://sass-lang.com/): SASS, version 1.50.0
-* [NODE.JS](https://nodejs.org/es/): NODE.JS, version 16.15.0 LTS
-* [VERCEL](https://vercel.com/dashboard): VERCEL
+* [NODE.JS](https://nodejs.org/es/): NODE.JS, versión 16.15.0 LTS
+* [VERCEL](https://vercel.com/dashboard): Vercel
 
 ***
 
