@@ -5,7 +5,7 @@ Inicié un nuevo proyecto más completo que el anterior para poder aplicar lo vi
 # AVERY ACADEMIA DE DANZAS 
 ## PROYECTO DE DESARROLLO WEB
 
-* [link de acceso al proyecto en vercel](https://academia-de-danzas-avery-giargei.vercel.app/paginas/contacto.html?nombre=&apellido=)
+* [link de acceso al proyecto en vercel](https://academia-de-danzas-avery-giargei.vercel.app/index.html)
 
 ***
 ### ÍNDICE
