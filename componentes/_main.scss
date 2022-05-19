@@ -7,7 +7,7 @@
     margin-top: 3rem;
     background-color: $bgColor;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 3px $bgColorLight;
+    box-shadow: 1px 1px 20px 2px $bgColorLight;
 
     display: flex;
     @include dFlex(column, center, center, center);
@@ -159,7 +159,7 @@
     background-image: url(../imagenes/bailarina.jpg);
     background-position: bottom;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 3px $bgColorLight;
+    box-shadow: 1px 1px 15px 3px $bgColorLight;
     padding: 3rem;
     margin-bottom: 2rem;
     opacity: 90%;
@@ -197,7 +197,7 @@
     background-image: url(../imagenes/bailarina.jpg);
     background-position: bottom;
     border: 2px solid $bgColor;
-    box-shadow: 2px 5px 5px 3px $colorDark;
+    box-shadow: 2px 5px 15px 3px $colorDark;
     overflow: hidden;
 
     display: flex;
@@ -227,7 +227,7 @@
         font-size: ($fontSize - 5px);
         border: 1px solid $bgColor;
         background-color: $bgColor;
-        box-shadow: 1px 1px 2px 2px $bgColor;
+        box-shadow: 1px 1px 15px 2px $bgColor;
         opacity: 80%;
 
         transform: translate(0, 350px);
@@ -315,7 +315,7 @@
 
         @if $estilo{
 
-            box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+            box-shadow: 1px 1px 10px 2px hsl(300, 32%, 63%);
 
             div{
                 border-radius: 5px;
