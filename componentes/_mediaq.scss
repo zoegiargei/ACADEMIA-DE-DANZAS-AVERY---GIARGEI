@@ -1,5 +1,4 @@
 
-
 @media only screen and (min-width: 768px){
 
     /*footer*/
@@ -11,6 +10,18 @@
         "footer-1 footer-2 footer-4"
         "footer-1 footer-3 footer-4"
         ;
+
+        $bgColorFooter: hsl(0, 0%, 0%);
+
+
+        @for $i from 1 to 5 {
+
+            li:nth-child(2n+1) {
+                background-color: lighten($bgColorLight, $i * 1%);
+                color: $colorDark;
+            }
+        }
+          
     }
 }
 
@@ -89,7 +100,7 @@
     }
 
 
-    /*Pagina n2 LA ESCUELA*/
+    /*PAGINA N°2 - LA ESCUELA*/
     .txt{
         
         img{
@@ -98,7 +109,7 @@
     }
 
 
-    /*pagina n3 CLASES*/
+    /*PAGINA N°3 - CLASES*/
     .cuadro{
 
         background-color: hsl(240, 67%, 94%);
@@ -113,7 +124,7 @@
     }
 
 
-    /*pagina n4 GALERIA*/
+    /*PAGINA N°4 - GALERIA*/
     .galeria{
 
         @include dFlex(row, space-between, baseline, center);

@@ -1,5 +1,4 @@
 
-
 /*MAIN INDEX*/
 .titleMain{
 
@@ -7,14 +6,15 @@
 
     margin-top: 3rem;
     background-color: $bgColor;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px $bgColorLight;
 
     display: flex;
     @include dFlex(column, center, center, center);
 
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 3px $bgColorLight;
-
     z-index: 100000;
+
+    border: map-get($estilos, border);
 
     &__h2{
 
@@ -40,7 +40,7 @@
 }
 
 
-/*carousel*/
+/*CAROUSEL*/
 .owlCarr{
 
     &__item{
@@ -52,6 +52,7 @@
 
         div{
             img{
+
                 width: 18rem;
                 height: 14rem;
                 object-fit: cover;
@@ -64,6 +65,7 @@
 .infoCarr{
 
     color: $bgColor;
+    
     &:hover{
         color: $bgColorLight;
     }
@@ -92,10 +94,20 @@
     }
 
     div{
-        margin: 1rem;
+
+        display: flex;
+        @include dFlex(column, center, center, center);
+
+        margin: 0.5rem;
         width: 15rem;
+
         div{
+
+            display: flex;
+            @include dFlex(column, center, center, center);
+
             img{
+
                 width: 100%;
                 height: 11rem;
                 object-fit: cover;
@@ -119,24 +131,37 @@
     width: 100px;
     height: 45px;
     border-radius: 10px 0 0 10px;
-    background-color: hsl(156, 100%, 31%);
+    background-color: $colorWtp;
 
+    box-shadow: 1px 1px 2px 1.5px $colorWtp;
     opacity: 90%;
 
     display: flex;
     @include dFlex(column, center, center, none);
+
+    a{
+        &:hover{
+
+            color: $fontColor;
+            transform: scale(1.2, 1.2);
+        }
+    }
+
 }
 
 
-/*Pagina n2 La Escuela*/
+/*PAGINA N°2 - LA ESCUELA*/
 .txt{
 
     font-size: $fontSize;
     color: $colorDark;
     background-color: $bgColorLight;
+    background-image: url(../imagenes/bailarina.jpg);
+    background-position: bottom;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 3px $bgColorLight;
     padding: 3rem;
+    margin-bottom: 2rem;
     opacity: 90%;
 
     img{
@@ -162,16 +187,17 @@
     color: $bgColor;
     font-size: $fontSize;
     font-weight: $fontWeight;
-
-    background-image: url(../imagenes/profeIsmael.jpg);
+    background-image: url(../imagenes/bailarina.jpg);
+    background-position: bottom;
     border: 2px solid $bgColor;
     box-shadow: 2px 5px 5px 3px $colorDark;
+    overflow: hidden;
 
     display: flex;
     @include dFlex(column, flex-start, center, center);
-    overflow: hidden;
 
     h6{
+
         font-size: $fontSize;
         color: $bgColor;
     }
@@ -190,7 +216,6 @@
     &__txt{
 
         padding: 10px;
-
         color: $fontColor;
         font-size: ($fontSize - 5px);
         border: 1px solid $bgColor;
@@ -200,8 +225,9 @@
 
         transform: translate(0, 350px);
         transition: 1.2s;
-    }
 
+
+    }
 
     &:hover{
 
@@ -214,8 +240,63 @@
     }
 }
 
+.tooltip{
 
-/*Pagina n3 Clases*/
+    position: relative;
+    display: inline-block;
+    padding: 1em 3em;
+    color: $colorDark;
+    font-size: $fontSizeL;
+
+    &::after{
+
+        border-bottom: 26px solid $bgColor;
+        border-left: 26px solid transparent;
+        border-right: 26px solid transparent;
+        width: 0;
+        height: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 100%;
+        left: 4rem;
+    }
+}
+
+.txt__info{
+
+    margin-top: 3rem;
+    padding: 2rem;
+    max-height: 250px;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    scrollbar-width: thin;
+    scrollbar-color: $bgColor;
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    
+    &::-webkit-scrollbar:vertical {
+        width:10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background-color: $bgColor;
+        border-radius: 20px;
+        border: 2px solid $bgColorLight;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;  
+    }
+}
+
+
+/*PAGINA N°3 - CLASES*/
 .titleC{
     @extend .titleProf;
 }
@@ -226,12 +307,11 @@
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    color: $colorDark;
+    font-weight: $fontWeightXL;
 
     display: flex;
     @include dFlex(column, center, stretch, center);
-
-    color: $colorDark;
-    font-weight: $fontWeightXL;
 
     h1{
         color: $colorDark;
@@ -246,15 +326,27 @@
         background-color: hsl(240, 67%, 94%);
     }
 
-    .lunes{
-        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
-        div{
-            padding: 1rem;
+    @mixin estiloCuadro($estilo) {
 
-            &:hover{
-                transform: scale(1.3, 1.3);
+        @if $estilo{
+
+            box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
+
+            div{
+                border-radius: 5px;
+                padding: 1rem;
+    
+                &:hover{
+                    transform: scale(1.3, 1.3);
+                }
             }
         }
+    }
+
+    .lunes{
+
+        @include estiloCuadro(true);
+
         &__1{
             /*Danza jazz*/
             background-color: hsl(274, 53%, 37%);
@@ -276,14 +368,9 @@
     }
 
     .martes{
-        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
-        div{
-            padding: 1rem;
-            
-            &:hover{
-                transform: scale(1.3, 1.3);
-            }
-        }
+
+        @include estiloCuadro(true);
+
         &__1{
             /*STRECHING*/
             background-color: hsl(300, 100%, 50%);
@@ -307,14 +394,9 @@
     }
 
     .miercoles{
-        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
-        div{
-            padding: 1rem;
 
-            &:hover{
-                transform: scale(1.3, 1.3);
-            }
-        }
+        @include estiloCuadro(true);
+
         &__1{
             /*BACHATA*/
             background-color: hsl(350, 100%, 88%);
@@ -331,14 +413,9 @@
     }
 
     .jueves{
-        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
-        div{
-            padding: 1rem;
 
-            &:hover{
-                transform: scale(1.3, 1.3);
-            }
-        }
+        @include estiloCuadro(true);
+
         &__1{
             @extend .martes__1;
         }
@@ -354,14 +431,9 @@
     }
 
     .viernes{
-        box-shadow: 1px 1px 2px 2px hsl(300, 47%, 75%);
-        div{
-            padding: 1rem;
 
-            &:hover{
-                transform: scale(1.3, 1.3);
-            }
-        }
+        @include estiloCuadro(true);
+
         &__1{
             @extend .martes__5;
         }
@@ -379,7 +451,7 @@
 }
 
 
-/*pagina n4 Galeria*/
+/*PAGINA N°4 - GALERIA*/
 .galeria{
 
     display: flex;
@@ -400,14 +472,13 @@
 }
 
 
-/*pagina n5 Contactanos*/
+/*PAGINA N°5 CONTACTO*/
 .comunicate{
 
     background-color: $bgColorLight;
     height: min-content;
     padding: 1rem;
     font-size: $fontSize;
-
     border: 3px dashed $colorDark;
 
     display: flex;

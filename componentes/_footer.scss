@@ -1,9 +1,9 @@
+
 .footer{
 
     position: relative;
 
     padding: 1rem;
-
     background-color: map-get($estilos, color);
 
     z-index: 100000;
@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-
     grid-template-areas: 
     "footer-1"
     "footer-2"
@@ -33,6 +32,7 @@
             @include circle(80px);
         }
     }
+
     &__2{
 
         @extend .footer__1;
@@ -41,12 +41,11 @@
         ul{
             li{
                 border-bottom: map-get($estilos, border);
-                &:last-child{
-                    border-bottom: none;
-                }
+                border-top: map-get($estilos, border);
             }
         }
     }
+
     &__3{
 
         @extend .footer__2;
@@ -54,13 +53,13 @@
 
         margin-top: 1.5rem
     }
+
     &__4{
 
         @extend .footer__1;
         grid-area: footer-4;
 
         &__redes{
-
             .redes{
                 &:hover{
                     color: $colorDark;
