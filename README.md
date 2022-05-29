@@ -61,7 +61,7 @@ Una lista de las tecnologías utilizadas en el proyecto:
 
 > * Me gustaria saber si la presentación del html e incluso el scss están relativamente bien para la comunidad de programadores
 > * Defectos que si o si deba evitar en próximos proyectos
-> * Recomendaciones sobre cualquier aspecto, ya sea: ubicación y nombres de los directorios, indentaciones, espacios blancos, comentarios, de SASS: variables ,etc... Quiero aprender!!
+> * Recomendaciones sobre cualquier aspecto, ya sea: ubicación y nombres de los directorios, **indentaciones**, espacios blancos, comentarios, de SASS: variables ,etc... Quiero aprender!!
 
 ***
 
@@ -75,4 +75,4 @@ Una lista de las tecnologías utilizadas en el proyecto:
 
 ### Sobre el Autor
 
-**Mi nombre es Zoe Giargei, tengo 21 años, estoy estudiando una carrera de Desarrollo Web Full Stack, ya finalizando el 1er curso de Desarrollo Web. Tengo conocimiento en Python y Java, estudié 2 años la carrera de Ingeniería en Sistemas en la UTN, por lo tanto, por lo visto en esos años tengo facilidad para aprender lógica de programación . Mi objetivo es dedicarme a la programación, y a la bioquímica como quien dice por amor al arte... ¡Espero que mi proyecto demuestre mi dedicación y ganas de aprender en este rubro!**
+**Mi nombre es Zoe Giargei, tengo 21 años, estoy estudiando una carrera de Desarrollo Web Full Stack, ya finalizando el 1er curso de Desarrollo Web. Tengo conocimiento en Python y Java, estudié 2 años la carrera de Ingeniería en Sistemas en la UTN, por lo tanto, por lo visto en esos años tengo facilidad para aprender lógica de programación . Mi objetivo es dedicarme a la programación,y la bioquímica como quien dice por amor al arte... ¡Espero que mi proyecto demuestre mi dedicación y ganas de aprender en este rubro!**
