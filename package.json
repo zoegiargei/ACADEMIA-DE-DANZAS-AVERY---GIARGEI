@@ -4,12 +4,12 @@
   "description": "Avery Academia de danzas consta de 5 páginas: index(Inicio), La escuela, Clases, Galería de Recuerdos, Contactos. Creadas con html, maquetadas con boostrap y estilos agregados con SASS, Owl Carousel y JavaScript(pequeño fragmento de código). El sitio web de Avery Academia de Danzas ofrece información sobre los tipos de danzas que se dictan en las clases (danzas de diferentes ritmos afro latinos y modernos), nos muestra sus horarios disponibles, nos brinda informacion sobre sus profecionales a cargo de las clases y nos muestra recuerdos inolvidables (imágenes) sobre presentaciones de coreografías de los diferentes grupos de baile. En la pagina de contacto podemos encontrar los datos necesarios para comunicarnos con Avery Academia de Danzas, ver sus redes sociales y un formulario input de texto para enviarles consultas.",
   "main": "index.js",
   "scripts": {
-    
     "start": "sass estilos.scss ./css/estilos.css -w --no-source-map -s compressed"
   },
   "author": "zoe-giargei",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "swiper": "^8.1.4"
   }
 }
