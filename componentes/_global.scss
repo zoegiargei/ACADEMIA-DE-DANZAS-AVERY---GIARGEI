@@ -29,6 +29,14 @@ body::after {
     right: 0;
 }
 
+body{
+    background-image: url(../imagenes/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+
 
 /*MIXINS*/
 @mixin circle($width) {
