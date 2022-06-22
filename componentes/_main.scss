@@ -53,7 +53,7 @@
 /*Container-2*/
 .container-2{
 
-    background-image: url(../imagenes/4-bailarina.jpg);
+    background-image: url(../imagenes/fondo.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -176,6 +176,7 @@
 .txt{
 
     font-size: $fontSize;
+    font-weight: 600;
     color: $colorDark;
     background-color: $bgColorSec;
     background-position: bottom;
@@ -185,7 +186,11 @@
     margin-bottom: 2rem;
     opacity: 90%;
 
-    position: relative;
+    h3,h5{
+
+        font-weight: 500;
+        color: $colorDark;
+    }
 
     img{
         @include circle(150px);
@@ -200,10 +205,10 @@
 
 .container-3{
 
-    background-image: url(../imagenes/profeIsmael.jpg);
+    background-image: url(../imagenes/fondo3.jpg);
     background-attachment: fixed;
     background-position: center center;
-    background-size:contain;
+    background-size: contain;
 }
 
 .infoTarjetas{
